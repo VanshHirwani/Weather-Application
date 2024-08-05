@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.freepik.com/512/7477/7477790.png"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+<body>
+   <div class="wrapper">
+    <div class="background">
+        <div class="image">
+        <div class="text">
+            <p id="text1">Weather</p>
+        </div>
+      </div>
+      </div>
+      <div class="buttons">
+        <button class="activeCurrent">My Location</button>
+        <button class="activeSearch">Search Weather</button>
+      </div>
+      <div class="current">
+        <div class="datahide1">
+          <div class="cityname1" class="changecolor"></div>
+          <div class="weatherimage1"></div>
+          <div class="describe1">
+            <div ><h3 class="temp1" class="changecolor" ></h3></div>
+            <div><h3 class="desc1" class="changecolor" ></h3></div>
+          </div>
+         <div class="CONTENT1">
+          <div class="speed1">
+            <div class="winpic"></div>
+            <div class="windspeed">
+              <div ><h3 class="windvalue" class="changecolor"  >--</h3></div>
+              <div><h5 class="changecolor"  >wind speed</h5></div>
+            </div>
+          </div>
+          <div class="humidity1">
+            <div class="humiditypic" ></div>
+            <div class="humi">
+              <div><h3 class="humidity1value"  class="changecolor" style="text-align: center;">--</h3></div>
+              <div><h5  class="changecolor" >Humidity</h5></div>
+            </div>
+          </div>
+          <div class="clouds1">
+            <div class="cloudpic"></div>
+            <div class="clouds-outer">
+              <div ><h3 class="cloudsvalue"  class="changecolor" style="text-align: center;">--</h3></div>
+            <div><h5  class="changecolor" >Clouds</h5></div>
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>
+      <div class="manual">
+        <input type="text" id="button" placeholder="ENTER LOCATION">
+        <div class="datahide">
+          <div class="cityname"></div>
+          <div class="weatherimage"></div>
+          <div class="describe">
+            <div ><h3 class="temp" class="changecolor" ></h3></div>
+            <div><h3 class="desc" class="changecolor" ></h3></div>
+          </div>
+          <div class="CONTENT">
+            <div class="speed">
+              <div class="winpic1"></div>
+              <div class="windspeed1">
+                <div ><h3 class="windvalue1" class="changecolor">--</h3></div>
+                <div><h5 class="changecolor" >wind speed</h5></div>
+              </div>
+            </div>
+            <div class="humidity">
+              <div class="humiditypic1" ></div>
+              <div class="humi1">
+                <div><h3 class="humidity2value"  class="changecolor" style="text-align: center;">--</h3></div>
+                <div><h5  class="changecolor" >Humidity</h5></div>
+              </div>
+            </div>
+            <div class="cloudss">
+              <div class="cloudpic1"></div>
+              <div class="clouds-outer1">
+                <div ><h3 class="cloudsvalue1"  class="changecolor" style="text-align: center;">--</h3></div>
+              <div><h5  class="changecolor" >Clouds</h5></div>
+              </div>
+            </div>
+            </div>
+      </div>
+    </div>
+      <button onclick="cll()" class="btn" style="position: absolute; top: 50px;">click me</button>
+   </div>
+   <!-- https://api.openweathermap.org/data/2.5/weather?q=goa&appid=d1845658f92b31c64bd94f06f7188c9c&units=metric -->
+    <script src="script.js"></script>
+</body>
+</html>
